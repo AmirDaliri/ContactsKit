@@ -12,6 +12,10 @@
 		2978C5D92173A5E2007E3DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978C5D72173A5E2007E3DEF /* Main.storyboard */; };
 		2978C5DB2173A5E3007E3DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2978C5DA2173A5E3007E3DEF /* Assets.xcassets */; };
 		2978C5DE2173A5E3007E3DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978C5DC2173A5E3007E3DEF /* LaunchScreen.storyboard */; };
+		2978C5E62173A618007E3DEF /* PhoneContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978C5E52173A618007E3DEF /* PhoneContacts.swift */; };
+		2978C5E82173A6D6007E3DEF /* PhoneContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978C5E72173A6D6007E3DEF /* PhoneContact.swift */; };
+		2978C5EA2173A8BF007E3DEF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978C5E92173A8BF007E3DEF /* TableViewCell.swift */; };
+		2978C5EC2173AF54007E3DEF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978C5EB2173AF54007E3DEF /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2978C5DA2173A5E3007E3DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2978C5DD2173A5E3007E3DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2978C5DF2173A5E3007E3DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2978C5E52173A618007E3DEF /* PhoneContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContacts.swift; sourceTree = "<group>"; };
+		2978C5E72173A6D6007E3DEF /* PhoneContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContact.swift; sourceTree = "<group>"; };
+		2978C5E92173A8BF007E3DEF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2978C5EB2173AF54007E3DEF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,73 @@
 			isa = PBXGroup;
 			children = (
 				2978C5D32173A5E2007E3DEF /* AppDelegate.swift */,
-				2978C5D52173A5E2007E3DEF /* ViewController.swift */,
-				2978C5D72173A5E2007E3DEF /* Main.storyboard */,
-				2978C5DA2173A5E3007E3DEF /* Assets.xcassets */,
-				2978C5DC2173A5E3007E3DEF /* LaunchScreen.storyboard */,
-				2978C5DF2173A5E3007E3DEF /* Info.plist */,
+				2978C5ED2173C3A2007E3DEF /* Model */,
+				2978C5EE2173C3AB007E3DEF /* Controllers */,
+				2978C5EF2173C3BE007E3DEF /* View */,
+				2978C5F22173C3F0007E3DEF /* Resources */,
+				2978C5F32173C3F8007E3DEF /* SupportingFile */,
 			);
 			path = ContactTest;
+			sourceTree = "<group>";
+		};
+		2978C5ED2173C3A2007E3DEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5E72173A6D6007E3DEF /* PhoneContact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2978C5EE2173C3AB007E3DEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5E52173A618007E3DEF /* PhoneContacts.swift */,
+				2978C5D52173A5E2007E3DEF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2978C5EF2173C3BE007E3DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5F02173C3C5007E3DEF /* StoryBoards */,
+				2978C5F12173C3D5007E3DEF /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2978C5F02173C3C5007E3DEF /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5D72173A5E2007E3DEF /* Main.storyboard */,
+				2978C5DC2173A5E3007E3DEF /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		2978C5F12173C3D5007E3DEF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5E92173A8BF007E3DEF /* TableViewCell.swift */,
+				2978C5EB2173AF54007E3DEF /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2978C5F22173C3F0007E3DEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5DA2173A5E3007E3DEF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2978C5F32173C3F8007E3DEF /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				2978C5DF2173A5E3007E3DEF /* Info.plist */,
+			);
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2978C5EA2173A8BF007E3DEF /* TableViewCell.swift in Sources */,
 				2978C5D62173A5E2007E3DEF /* ViewController.swift in Sources */,
+				2978C5EC2173AF54007E3DEF /* CollectionViewCell.swift in Sources */,
 				2978C5D42173A5E2007E3DEF /* AppDelegate.swift in Sources */,
+				2978C5E62173A618007E3DEF /* PhoneContacts.swift in Sources */,
+				2978C5E82173A6D6007E3DEF /* PhoneContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCU4JG2P77;
-				INFOPLIST_FILE = ContactTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactTest/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCU4JG2P77;
-				INFOPLIST_FILE = ContactTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactTest/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
